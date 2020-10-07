@@ -1,0 +1,103 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <main id="main" class="container">
+        <h1 id="title">Survey Form </h1>
+        <p id="description">Enter yout data</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" required placeholder="full name">
+                <small class="form-text text-mutet">enter your name</small>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" required placeholder="Email">
+                <small class="form-text text-mutet">enter your email</small>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" class="form-control" min="1" max="100" required placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label for="dropdown">Country</label>
+                <select class="form-control" id="dropdown">
+                  <option>Mexico</option>
+                  <option>Brazil</option>
+                  <option>Canada</option>
+                  <option>United States</option>
+                  <option>France</option>
+                  <option>No country</option>
+                </select>
+              </div>
+              <div class="form-group">
+              <label for="number">Choose color</label>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="color" id="black" value="option1" checked>
+                <label class="form-check-label" for="black">
+                  Black
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="color" id="White" value="option2">
+                <label class="form-check-label" for="White">
+                  White
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="color" id="green" value="option2">
+                <label class="form-check-label" for="green">
+                  green
+                </label>
+              </div>
+            </div>
+            <div class="form-group">            
+              <label for="number">Languages</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="English">
+                <label class="form-check-label" for="inlineCheckbox1">English</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Spanish">
+                <label class="form-check-label" for="inlineCheckbox2">Spanish</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="French">
+                <label class="form-check-label" for="inlineCheckbox2">French</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Chinese">
+                <label class="form-check-label" for="inlineCheckbox2">Chinese</label>
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="Comments">Comments</label>
+                <textarea class="form-control" id="Comments" rows="3"></textarea>
+              </div>
+              <button type="submit" id="submit" class="btn btn-primary">Save the info</button>
+
+        </form>
+</main>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
